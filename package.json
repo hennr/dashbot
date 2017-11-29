@@ -9,8 +9,8 @@
     "url": "ssh://git@github.com:sbstnmsch/dashbot.git"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack --progress --colors",
-    "test": "./node_modules/.bin/grunt"
+    "build": "webpack",
+    "test": "grunt"
   },
   "readmeFilename": "README.md",
   "devDependencies": {

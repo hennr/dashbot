@@ -12,15 +12,13 @@ A live demo can be found [on heroku](https://arewegreen.herokuapp.com/) (The pro
 
 ```shell
 $ npm install
-$ grunt
+$ npm test
 ```
 
 ## Run it locally
 
 Follow [Build it](#build-it) and then run any of these commands: 
 ```shell
-# via nginxere; available at https://github.com/sbstnmsch/nginxere
-$ nginxere 
 # via python
 $ cd dist && python -m SimpleHTTPServer 8000
 # or by serving ./dist with your favorite web server
