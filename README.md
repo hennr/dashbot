@@ -6,8 +6,6 @@
 product development process. Use it for dashboards served by a i.e.
 Rasperry PI or as an intranet website.
 
-![](app/examples/screenshot.png "Looks like")
-
 A live demo can be found [on heroku](https://arewegreen.herokuapp.com/) (The project files can be found here:  [github.com/hennr/arewegreen](https://github.com/hennr/arewegreen))
 
 ## Build it
