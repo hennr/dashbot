@@ -1,6 +1,5 @@
 {
   "default": [
-    "clean:before",
     "stylus",
     "autoprefixer",
     "cssmin",
@@ -9,8 +8,7 @@
     "jshint",
     "jscs",
     "ngconstant",
-    "shell:webpack",
-    "clean:after"
+    "shell:webpack"
   ],
   "build": [
     "default"
