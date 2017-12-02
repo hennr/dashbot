@@ -26,13 +26,5 @@ module.exports = {
     { test: /\.svg$/, loader: 'file-loader' },
     { test: /\.json$/, loader: 'json-loader' }
     ]
-  },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      mangle: false
-    })
-  ]
+  }
 };
