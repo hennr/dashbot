@@ -70,7 +70,7 @@ _getModules = function() {
   'use strict';
 
   return _.chain(_ngComponents)
-          .pluck('ngModule')
+          .map('ngModule')
           .uniq()
           .value();
 };
