@@ -11,9 +11,9 @@
   "scripts": {
     "clean:before": "rm -rf dist",
     "clean:after": "rm -rf app/stylesheets/*.css",
-    "build": "webpack",
+    "bundle": "webpack",
     "grunt": "grunt",
-    "test": "npm-run-all clean:before grunt clean:after"
+    "test": "npm-run-all clean:before grunt bundle clean:after"
   },
   "readmeFilename": "README.md",
   "devDependencies": {
