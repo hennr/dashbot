@@ -2,7 +2,6 @@
   "default": [
     "stylus",
     "copy",
-    "processhtml",
     "jshint",
     "jscs",
     "ngconstant"

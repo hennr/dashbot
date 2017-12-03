@@ -6,6 +6,7 @@
     "css": "app/stylesheets",
     "fonts": "app/woff",
     "images": "app/images",
+    "index": "app",
     "templates": "app/templates"
   },
   "dist": {
@@ -17,6 +18,7 @@
     "css": "dist",
     "fonts": "dist",
     "images": "dist/images",
+    "index": "dist",
     "templates": "dist/templates"
   },
   "lint": [

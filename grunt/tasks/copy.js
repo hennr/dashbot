@@ -5,6 +5,12 @@ module.exports = {
         dest: '<%= paths.dist.angular %>',
         expand: true
     },
+    index: {
+        cwd: '<%= paths.src.index %>',
+        src: 'index.html',
+        dest: '<%= paths.dist.index %>',
+        expand: true
+    },
     fonts: {
         cwd: '<%= paths.src.fonts %>',
         src: '**/*',
