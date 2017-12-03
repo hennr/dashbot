@@ -8,7 +8,7 @@ module.exports = {
                           // Data URI embedding
     },
     files: {
-      '<%= paths.src.css %>/stylus-out.css': [
+      '<%= paths.dist.css %>/app.css': [
         '<%= paths.src.css %>/**/*.styl'
       ]
     }
