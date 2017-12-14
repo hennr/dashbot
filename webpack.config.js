@@ -8,11 +8,11 @@ module.exports = {
     main: './app/javascript/ng-dashbot'
   },
   output: {
-      path: __dirname + "/dist",
+    path: __dirname + '/dist',
     filename: 'dashbot.bundle.js'
   },
   resolve: {
-      modules: ['node_modules', 'app/javascript']
+    modules: ['node_modules', 'app/javascript']
   },
   externals: {
     angular: 'angular'
