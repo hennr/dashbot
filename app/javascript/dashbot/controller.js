@@ -16,19 +16,19 @@ module.exports = {
       {
         transformResponse: function(data) {
           try {
-            return JSON.parse(data);
+            return angular.fromJson(data);
           } catch (e) {
             return [];
           }
         }
       }
     )
-    .success(function(data) {
-      $scope.grid = data;
-    })
-    .error(function() {
-      $scope.grid = [[{ visual: 'number', value: 'Missing layout' }]];
-    });
+      .success(function(data) {
+        $scope.grid = data;
+      })
+      .error(function() {
+        $scope.grid = [[{ visual: 'number', value: 'Missing layout' }]];
+      });
 
   }
 };

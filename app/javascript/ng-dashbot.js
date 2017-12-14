@@ -1,8 +1,8 @@
 require('config/environment');
 var
-    ngApp = require('ng-app.json'),
-    initializer = require('initializer'),
-    ngModule;
+  ngApp = require('ng-app.json'),
+  initializer = require('initializer'),
+  ngModule;
 
 initializer
   .module(ngApp.ngModule)
@@ -30,11 +30,11 @@ initializer
       'dashbot.directives',
       'dashbot.controllers'
     ])
-    .config(require('config/log'))
-    .config(function($httpProvider) {
-      //Enable cross domain calls
-      $httpProvider.defaults.useXDomain = true;
-    });
+      .config(require('config/log'))
+      .config(function($httpProvider) {
+        // Enable cross domain calls
+        $httpProvider.defaults.useXDomain = true;
+      });
   });
 
 module.exports = ngModule;

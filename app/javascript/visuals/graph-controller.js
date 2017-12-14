@@ -18,16 +18,16 @@ module.exports = {
       var apiURL = $scope.visual.xhr;
       $scope.visual.loading = true;
       $http.get(apiURL)
-      .success(function(data) {
-        _draw(data || []);
-        $timeout(function() {
-          $scope.visual.loading = false;
-        }, 1000);
+        .success(function(data) {
+          _draw(data || []);
+          $timeout(function() {
+            $scope.visual.loading = false;
+          }, 1000);
 
-        if ($scope.visual.xhrInterval) {
-          $timeout(_getJson, $scope.visual.xhrInterval * 1000);
-        }
-      });
+          if ($scope.visual.xhrInterval) {
+            $timeout(_getJson, $scope.visual.xhrInterval * 1000);
+          }
+        });
     };
 
     _draw = function(v) {

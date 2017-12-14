@@ -43,7 +43,7 @@ var
 _isComponentValid = function(ngName, ngModule) {
   'use strict';
 
-  if (ngModule === undefined || ngName === undefined) {
+  if (angular.isUndefined(ngModule) || angular.isUndefined(ngName)) {
     log.error(
       'Component',
       ngName,
@@ -70,9 +70,9 @@ _getModules = function() {
   'use strict';
 
   return _.chain(_ngComponents)
-          .map('ngModule')
-          .uniq()
-          .value();
+    .map('ngModule')
+    .uniq()
+    .value();
 };
 
 _initializeModules = function() {

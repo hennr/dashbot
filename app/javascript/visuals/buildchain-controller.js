@@ -20,7 +20,7 @@ module.exports = {
 
       $scope.visual.loading = true;
       $http.get(apiURL)
-        .success(function(data) { // jshint ignore:line
+        .success(function(data) {
 
           $scope.visual.since = new Date();
           for (i = 0; i < data.length; ++i) {

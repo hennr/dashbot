@@ -34,7 +34,7 @@ module.exports = {
           $scope.value = $scope.temperature;
 
           if ($scope.visual.green && $scope.visual.red) {
-            $scope.visual.build = eval(// jshint ignore:line
+            $scope.visual.build = eval(
               $scope.value + $scope.visual.green + '? "green" : (' +
               $scope.value + $scope.visual.red + ' ? "red" : "none") '
             );

@@ -2,8 +2,6 @@
   "default": [
     "stylus",
     "copy",
-    "jshint",
-    "jscs",
     "ngconstant"
   ],
   "build": [
