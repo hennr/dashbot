@@ -10,10 +10,11 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "bundle": "webpack",
-    "grunt": "grunt",
     "eslint": "eslint --fix app/",
-    "test": "npm-run-all clean eslint grunt bundle"
+    "grunt": "grunt",
+    "stylus": "stylus app/stylesheets/styl/app.styl --out dist/",
+    "bundle": "webpack",
+    "test": "npm-run-all clean eslint grunt stylus bundle"
   },
   "readmeFilename": "README.md",
   "devDependencies": {
@@ -26,7 +27,6 @@
     "grunt": "0.4.5",
     "grunt-cli": "0.1.13",
     "grunt-contrib-copy": "0.8.2",
-    "grunt-contrib-stylus": "1.0.0",
     "grunt-ng-constant": "2.0.0",
     "grunt-shell": "1.2.1",
     "imports-loader": "0.6.3",
@@ -36,7 +36,7 @@
     "node-libs-browser": "0.5.3",
     "npm-run-all": "^4.1.2",
     "style-loader": "0.13.0",
-    "stylus": "0.53.0",
+    "stylus": "0.54.5",
     "time-grunt": "1.3.0",
     "url-loader": "0.5.7",
     "webpack": "3.8.1"

@@ -1,6 +1,5 @@
 {
   "default": [
-    "stylus",
     "copy",
     "ngconstant"
   ],
